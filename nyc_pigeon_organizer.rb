@@ -27,7 +27,7 @@ def nyc_pigeon_organizer(data)
   data.each do |data_type, data_attributes| #|color, all the colors with the values|
     data_attributes.each do |key, names| #single color, all names with that color|
       names.each do |name|
-        pigeons_hash[name][data_type] = [key.to_str] 
+        pigeons_hash[name][data_type] = [key.to_s] 
 
       end
     end
