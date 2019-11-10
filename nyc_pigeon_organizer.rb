@@ -29,6 +29,7 @@ def nyc_pigeon_organizer(data)
       names.each do |name|
         binding.pry
         if pigeons_hash[name].key?(data_type)
+          pigeons_hash[name][data_type] << key.to_s
         else
         pigeons_hash[name][data_type] = []
         pigeons_hash[name][data_type] << key.to_s
