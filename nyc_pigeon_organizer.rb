@@ -28,8 +28,9 @@ def nyc_pigeon_organizer(data)
     data_attributes.each do |key, names| #single color, all names with that color|
       names.each do |name|
         binding.pry
-        pigeons_hash[name].key?(data_type)
-        pigeons_hash[name][data_type] = [key.to_s]
+        if pigeons_hash[name].key?(data_type)
+        else 
+        pigeons_hash[name][data_type]
 
       end
     end
