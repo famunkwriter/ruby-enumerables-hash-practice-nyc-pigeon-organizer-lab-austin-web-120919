@@ -29,7 +29,7 @@ def nyc_pigeon_organizer(data)
       names.each do |name|
         binding.pry
         if pigeons_hash[name].key?(data_type)
-        else 
+        else
         pigeons_hash[name][data_type]
 
       end
