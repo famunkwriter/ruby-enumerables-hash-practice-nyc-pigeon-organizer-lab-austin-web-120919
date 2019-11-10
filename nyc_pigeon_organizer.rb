@@ -30,8 +30,8 @@ def nyc_pigeon_organizer(data)
         binding.pry
         if pigeons_hash[name].key?(data_type)
         else
-        pigeons_hash[name][data_type]
-
+        pigeons_hash[name][data_type] = []
+        pigeons_hash[name][data_type] << [key.to_s]
       end
     end
   end
